@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+/* ========================================
+    全体設定
+========================================= */
+body {
+	color:#474747;
+	font-size: 14px;
+	line-height: 1.4em;
+	font-family: "メイリオ", "Meiryo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color:#474747;
+	text-decoration:none;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+/* ========================================
+    レイアウト
+========================================= */
+#wrapper{
+    width:960px;
+    height:auto;
+    margin:0 auto;
+  
+}
+
+
+/* ========================================
+    ヘッダー
+========================================= */
+header{
+    width:960px;
+    height:100px;
+    margin:0 auto;
+}
+header h1{
+    font-size:36px;
+    font-weight:bold;
+    padding:15px 0;
+    
+}
+header p{
+    font-size:16px;
+    color:gray;
+}
+
+header ul{
+   float:right;
+   margin-right:80px;
+}
+
+header ul li{
+    float:left;
+}
+
+header ul li a{
+    font-size:14px;
+    margin-right:20px;
+}
+header ul li a:hover{
+    opacity:0.8;
+}
+#form2{
+    float:right;
+}
+/* ========================================
+    メイン画像
+========================================= */
+#mainimage{
+    width:100%;
+    height:auto;
+}
+
+#main_image{
+    width:960px;
+    text-align:center;
+}
+ #mainimage h3{
+     font-size:25px;
+     font-weight:normal;
+     line-height:40px;
+     padding:50px 0;
+     color:gray;
+ }
+
+
+/* ========================================
+    投稿
+========================================= */
+#post{
+    width:100%;
+    height:auto;
+}
+.post_list{
+    width:100%;
+    height:80px;
+    padding:30px 0;
+}
+
+#post dl dt{
+    font-size:16px;
+    color:gray;
+    float: left;
+    line-height:80px;
+    margin-right:150px;
+    
+}
+
+.post_title{
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+.post_content{
+    font-weight:lighter;
+    color:gray;
+}
+#pagination {
+    width: auto;
+    height: 34px;
+    float: right;
+    margin:50px 0;
+}
+
+div#pagination ul li {
+    width: auto;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #dcdddf;
+    float: left;
+    margin-left: 10px;
+}
+
+div#pagination ul li a {
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 8px;
+    display: block;
+}
+
+#paging ul li a:hover {
+    color: #fff;
+    background-color: #f6ac4d;
+}
+
+
+/*
+====================================
+    プロフィール
+========================================= */
+#profile{
+    width:100%;
+    height:auto;
+    margin:80px 0;
+    
+}
+
+#profile img{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    float:left;
+}
+#profile ul li{
+    width:220px;
+    height:auto;
+    float:left;
+    margin-right:20px;
+}
+#profile ul li:last-child{
+    margin:0;
+}
+#profile dl.profile_list dt{
+    float:left;
+    margin:20px 0 20px 20px;
+}
+#profile dl.profile_list dt p{
+    font-size:15px;
+    font-weight:bold;
+}
+#profile dl.profile_list dt {
+    font-size:1.5em;
+    margin:6px;
+}
+#profile dl.profile_list dd{
+    float: left;
+    line-height:2em;
+    color:gray;
+}
+
+#profile ul li h4{
+    font-size:12px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+#profile ul li p{
+    color:gray;
+    line-height:2em;
+}
+
+#profile dl.post_option dd{
+    font-size:16px;
+    color:gray;
+    text-decoration:underline;
+    margin:15px 0 10px 0;
+    
+}
+
+#profile dl.post_option dt{
+    font-size:14px;
+    color:gray;
+
+}
+#profile_form{
+    margin-top:100px;
+    display:inline-block;
+    float:right;
+}
+/* ========================================
+    フッター
+========================================= */
+footer{
+    width:100%;
+    height:100px;
+    
+
+}
+
+footer #sns i{
+       float: left;
+       font-size:1.5em;
+       color:gray;
+       padding-right:10px;
+       line-height:100px;
+}
+
+#copyright p{
+    text-align:center;
+    line-height:100px;
+
+}
+
+
+
+
